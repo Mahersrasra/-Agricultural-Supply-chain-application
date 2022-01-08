@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blockchain app</title>
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+  
+  <script src="/javascripts/Finance.js"></script>
+
+</head>
+<body>
+  <h1>Blockchain app</h1>
+
+    <div class="btn-group" id="form-selector" align="center">
+		
+	
+		<button type="button" class="btn1 btn-selector" id="finance-btn">Micro-Finance</button>
+		
+	</div>
+
+	
+
+  <div class="form" id="finance-form">
+		<h2 class="form-title">Micro-Finance</h2>
+		
+
+		<input type="text" class="input-std" id="pfid" placeholder="Farmer Id">
+		<input type="text" class="input-std" id="lotnum" placeholder="Lot Number">
+		<input type="text" class="input-std" id="amount" placeholder="Fund Amount">
+		<table>
+		<tr><td><b><label class = "black">Balance</label></td><td>:</td></b><td><span class="black"><span class="black" span id="balance"></span>$</span></td></tr>
+		
+		</table>
+		<button type="button" class="btn-submit" id="getfund" onclick="fund()">Fund Farmer</button>
+		
+	<span id="status"></span>
+	</div>
+
+
+  
+   <link href="./app.css" rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/javascripts/Finance.js"></script>
+</body>
+</html>

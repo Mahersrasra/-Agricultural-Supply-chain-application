@@ -1,0 +1,50 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agricultural Blockchain</title>
+</head>
+<script src="html5-qrcode.min_.js"></script>
+<style>
+  .result{
+    background-color: green;
+    color:#fff;
+    padding:20px;
+  }
+  .row{
+    display:flex;
+  }
+  html {
+	width: 100%;
+	
+  background-image: url("/Images/wp1886350.jpg");
+  font-family: 'HelveticaNeue-Light', Helvetica;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+}
+</style>
+<div id="scene">
+  <div class="row">
+    <div class="col">
+      <div style="width:500px;" id="reader"></div>
+    </div>
+    <div class="col" style="padding:30px;" background>
+      <h4  style="color:rgb(29, 74, 154);">SCAN RESULT</h4>
+      <div id="result" style="color:rgb(86, 160, 32);">Results</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+function onScanSuccess(qrCodeMessage) {
+    document.getElementById('result').innerHTML = '<span class="result">'+qrCodeMessage+'</span>';
+}
+function onScanError(errorMessage) {
+  //handle scan error
+}
+var html5QrcodeScanner = new Html5QrcodeScanner(
+    "reader", { fps: 10, qrbox: 250 });
+html5QrcodeScanner.render(onScanSuccess, onScanError);
+</script> 
+

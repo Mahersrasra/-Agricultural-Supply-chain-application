@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blockchain app</title>
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+  
+  <script src="/javascripts/supplier.js"></script>
+
+</head>
+<body>
+  <h1>Blockchain app</h1>
+  
+    <div class="btn-group" id="form-selector" align="center">
+		
+		<button type="button" class="btn1 btn-selector active" id="sign-up-btn">supplier</button>
+		
+
+	</div>
+    <div class="form" id="sign-up-form">
+		<h2 class="form-title">Enter Details</h2>
+        
+		
+        <input type="text" class="input-std" id="lotnum" placeholder="Lot number">
+        <tr><td><b><label class = "black">Lot Number</label><td>:</td></td></b><td><span class="black" span id="cgetval8"></span></td></tr>
+        <input type="text" class="input-std" id="priceaddition" placeholder="Price addiion">
+        <a href="QRcode.html"><button type="button" class="btn-submit" id="getvalue">Scan your  image file</button></a>
+        
+		
+		
+		<button type="button" class="btn-submit" id="setvalue" onclick="set()">Submit Details!</button>
+  
+	<span id="status"></span>
+  <br>
+  <div align="center" id="qrcode"></div>
+	</div>
+  <script src="qrcode.min.js"></script>
+  <div id="qrcode"></div>
+	
+
+
+  
+   <link href="./app.css" rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/javascripts/supplier.js"></script>
+</body>
+</html>
